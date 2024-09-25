@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
 	return (
 		<div className="font-semibold text-lg">
@@ -50,11 +52,11 @@ export default function Header() {
 				</div>
 			</div>
 			<div className="h-[60px] py-4 px-14 bg-azul_lectos flex justify-between items-center">
-				<div>Inicio</div>
-				<div>Departamento Clinico</div>
-				<div>Departamento Pedagógico</div>
-				<div>Departamento Altas Habilidades</div>
-				<div>Sobre nós</div>
+				<Link to={"/"}>Inicio</Link>
+				<Link to={"/"}>Departamento Clinico</Link>
+				<Link to={"/"}>Departamento Pedagógico</Link>
+				<Link to={"/"}>Departamento Altas Habilidades</Link>
+				<Link to={"/sobre"}>Sobre nós</Link>
 			</div>
 		</div>
 	);
