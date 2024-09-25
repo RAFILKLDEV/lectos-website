@@ -1,8 +1,7 @@
+// vite.config.js
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-	base: "/lectos-website/",
-	plugins: [react()],
+	base: "/lectos-website/", // Altere para o nome do seu repositório
+	// outras configurações
 });
